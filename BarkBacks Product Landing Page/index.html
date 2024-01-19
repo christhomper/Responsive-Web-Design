@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarkBacks | Dog-Themed Phone Cases</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="nav-logo">
+            <span class="logo-text">BarkBacks</span>
+        </div>
+        <nav id="nav-bar">
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="features">
+        <h2>Unparalleled Designs For Dog Lovers</h2>
+        <p class="combine">We combine impeccable craftsmanship with the love for dogs to create cases that are a breed apart.</p>
+    </section>
+    
+    <section id="Our Top Picks">
+        <div class="top-picks">
+            <h2>Our Top Picks</h2>
+        </div>
+    </section>
+    <section id="products">
+        <div class="product">
+            <a href="https://www.etsy.com/uk/listing/1553729054/barkbacks-lab-phone-case?click_key=28ae13938e85baf1d8b248f1f2a4996f46305fdb%3A1553729054&click_sum=68167ab5&ref=shop_home_active_2" target="_blank" rel="noopener noreferrer"><img id="header-img" src="images/bla.jpeg" alt="Dog Phone Case 1"></a> 
+            <p>Luke</p>
+        </div>
+        <div class="product">
+            <a href="https://www.etsy.com/uk/listing/1567923597/barkbacks-lab-puppy-phone-case?click_key=c840e5dd72820ed09dcf77702d1d2e6af6b89243%3A1567923597&click_sum=9074d2d7&ref=shop_home_active_1" target="_blank" rel="noopener noreferrer"><img src="images/blp1.jpeg" alt="Dog Phone Case 2"></a>
+            <p>Magnolia</p>
+        </div>
+        <div class="product">
+            <a href="https://www.etsy.com/uk/listing/1567927201/barkbacks-lab-puppy-phone-case?click_key=5e99581702a01ea2098b7e1e20f48a337b4a84f6%3A1567927201&click_sum=407d8855&ref=shop_home_active_4" target="_blank" rel="noopener noreferrer"><img src="images/blp2.jpeg" alt="Dog Phone Case 3"></a>
+            <p>Jasper</p>
+        </div>
+    </section>
+    <section id="video-section">
+        <h2 class="topdog">Top Dog</h2>
+        <video id="video" width="100%" controls>
+            <source src="videos/Magnolia.MOV" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="contact">
+        <h2 class="contact">Contact Us</h2>
+        <form action=https://formspree.io/f/myyrgvgl method="post">
+            <input class ="textbox" type="name" placeholder="Your Name" required>
+            <input class="textbox" type="email" placeholder="Your Email" required>
+            <textarea class="textbox" name="message" placeholder="Your Message" required></textarea>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BarkBacks. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTop" style="position:fixed; bottom: 20px; right: 20px; background-color: #9E9D89; color: white; border: none; padding: 10px; border-radius: 50%; cursor: pointer; display: none;" onclick="scrollToTop()">↑</button>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("backToTop").style.display = "block";
+            } else {
+                document.getElementById("backToTop").style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

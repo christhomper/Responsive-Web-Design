@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Human Improvement Survey</title>
+</head>
+
+<body>
+    <div class="survey-container">
+        <header class="survey-header">
+            <h1 id="title">Human Improvement Survey</h1>
+            <p id="description">Empower Your Journey: Please Share Your Goals For Personal Growth</p>
+        </header>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label id="name-label" for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" class="input-text" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" class="input-text" placeholder="Enter your Email" required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Your Age:</label>
+                    <input type="number" name="age" id="number" min="10" max="100" class="input-text" placeholder="Age" />
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">Your Current Activity Level:</label>
+                    <select id="dropdown" name="activityLevel" class="input-select">
+                        <option class="select-option"value="Select Option">Select Option</option>
+                        <option value="Very Active">Very Active</option>
+                        <option value="Active">Active</option>
+                        <option value="Somewhat Active">Somewhat Active</option>
+                        <option value="Sedentary">Sedentary</option>
+                        <option value="Prefer Not To Answer">Prefer Not To Answer</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Health & Fitness Preferences</legend>
+                <div class="form-group">
+                    <label>Your Desire to Improve Activity Level:</label>
+                    <div class="radio-group">
+                        <label><input name="improve-health" value="yes" type="radio" class="input-radio" checked />Yes</label>
+                        <label><input name="improve-health" value="maybe" type="radio" class="input-radio" />Maybe</label>
+                        <label><input name="improve-health" value="unsure" type="radio" class="input-radio" />Unsure</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Health & Fitness Goals</legend>
+                <div class="form-group">
+                    <label>What would you like to improve upon?</label>
+                    <div class="checkbox-group">
+                        <label><input name="improve" value="Stamina" type="checkbox" class="input-checkbox" />Stamina & Endurance</label>
+                        <label><input name="improve" value="Strength" type="checkbox" class="input-checkbox" />Strength & Muscle Tone</label>
+                        <label><input name="improve" value="Flexibility" type="checkbox" class="input-checkbox" />Boost Flexibility</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <div class="form-group">
+                    <label for="comments">Any further comments? Please share:</label>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="I'd like to improve my health by..."></textarea>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
