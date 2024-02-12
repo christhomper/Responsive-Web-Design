@@ -10,6 +10,8 @@ Upon completion of this project, the following skills will be demonstrated:
 
     CSS: Styling elements for a visually appealing presentation.
 
+    JavaScript: Interactive elements to enhance user experience on the website.
+
     Image Integration: Inclusion of visual elements for an engaging user experience.
 
     Incorporation of Clickable Links: Providing links to individual recipe pages.
