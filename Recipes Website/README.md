@@ -24,7 +24,7 @@ The project aims to showcase fundamental skills in web development and design wh
 
 ### Live Demo
 
-To see this site live, visit [Recipes](http://chrisandkellysrecipes.s3-website-us-east-1.amazonaws.com)
+To see this site live, visit [Recipes](https://chrisandkellysrecipes.netlify.app/)
 
 
 
