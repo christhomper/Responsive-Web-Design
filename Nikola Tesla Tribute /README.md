@@ -2,4 +2,4 @@
 
 ## Live Demo
 
-To see this app live, visit [Nikola Tesla](https://niktesla.netlify.app/)
+To see this site live, visit [Nikola Tesla](https://niktesla.netlify.app/)
