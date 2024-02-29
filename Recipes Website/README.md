@@ -22,6 +22,14 @@ Upon completion of this project, the following skills will be demonstrated:
 
 The project aims to showcase fundamental skills in web development and design while creating an enjoyable and informative platform for sharing recipes.
 
+## Live Demo
+
+To see this site live, visit [Recipes](http://chrisandkellysrecipes.s3-website-us-east-1.amazonaws.com)
+
+
+
+
+
 
  
 
